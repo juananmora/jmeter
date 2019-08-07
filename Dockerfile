@@ -4,6 +4,10 @@ FROM alpine:3.9
 
 MAINTAINER Just van den Broecke<just@justobjects.nl>
 
+RUN adduser -S -D jon
+#RUN adduser -D -s /bin/bash jon
+USER jon
+
 ARG JMETER_VERSION="5.1.1"
 ENV JMETER_HOME /opt/apache-jmeter-${JMETER_VERSION}
 ENV	JMETER_BIN	${JMETER_HOME}/bin

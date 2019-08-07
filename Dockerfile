@@ -41,6 +41,6 @@ COPY entrypoint.sh /
 
 WORKDIR	${JMETER_HOME}
 
-USER ROOT
+USER root
 
 ENTRYPOINT ["/entrypoint.sh"]
